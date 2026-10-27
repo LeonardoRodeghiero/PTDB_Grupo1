@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Faculdade Dom Bosco</title>
+
+    <link rel="stylesheet" href="tela_login.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <img src="Logo-faculdade-dom-bosco.png" alt="Faculdade Dom Bosco">
+    </header>
+
+    <main class="login-container">
+
+        <section class="login-box">
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        id="matricula"
+                        name="matricula"
+                        placeholder="Matrícula"
+                        required>
+                </div>
+
+                <div class="form-group senha-box">
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Senha"
+                        required>
+
+                    <span id="mostrarSenha">👁</span>
+
+                </div>
+
+                <button type="submit" id="btnLogin">
+                    ENTRAR
+                </button>
+
+            </form>
+
+            <div class="login-options">
+                <a href="#" id="forgotPassword">
+                    ESQUECEU SUA SENHA?
+                </a>
+            </div>
+
+            <div id="confirmReset" class="modal">
+
+                <div class="modal-content">
+
+                    <h3>Redefinir Senha</h3>
+
+                    <p>
+                        Deseja solicitar redefinição da senha?
+                    </p>
+
+                    <div class="confirm-buttons">
+
+                        <button type="button" id="btnSim">
+                            Sim
+                        </button>
+
+                        <button type="button" id="btnNao">
+                            Não
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+    <script src="tela_login.js"></script>
+
+</body>
+
+</html>
+
+
+

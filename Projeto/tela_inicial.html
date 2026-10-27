@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acadêmico de Vídeos</title>
+
+    <link rel="stylesheet" href="tela_inicial.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <img src="Logo-faculdade-dom-bosco.png" alt="Faculdade Dom Bosco">
+        </div>
+
+        <nav class="menu">
+            <button id="btnInicio">Início</button>
+            <button id="btnVideos">Vídeos</button>
+            <button id="btnUpload">Enviar Vídeo</button>
+            <button id="btnLogin">Login</button>
+            <button id="btnSair">Sair</button>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="titulo">
+            <h1>Portal de Vídeos Acadêmicos</h1>
+            <p>Visualize e compartilhe conteúdos educacionais.</p>
+        </section>
+
+        <section class="filtros">
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar vídeo...">
+
+            <select id="filtroCategoria">
+                <option value="">Todas as Categorias</option>
+                <option value="Educação">Educação</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Esportes">Esportes</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+        </section>
+
+        <section class="videos-section">
+
+            <h2>Vídeos Disponíveis</h2>
+
+            <div id="listaVideos" class="videos-container">
+            </div>
+
+        </section>
+
+        <section id="uploadSection" class="upload-section">
+
+            <h2>Enviar Novo Vídeo</h2>
+
+            <form id="uploadForm">
+
+                <div class="form-group">
+                    <label>Título</label>
+
+                    <input
+                        type="text"
+                        id="titulo"
+                        required>
+                </div>
+
+                <div class="form-group">
+
+                    <label>Categoria</label>
+
+                    <select id="categoria">
+
+                        <option value="Educação">
+                            Educação
+                        </option>
+
+                        <option value="Tecnologia">
+                            Tecnologia
+                        </option>
+
+                        <option value="Esportes">
+                            Esportes
+                        </option>
+
+                        <option value="Outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Arquivo de Vídeo</label>
+
+                    <input
+                        type="file"
+                        id="video"
+                        accept="video/*"
+                        required>
+
+                </div>
+
+                <button type="submit">
+                    ENVIAR VÍDEO
+                </button>
+
+            </form>
+
+            <p id="uploadMessage"></p>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <p>Faculdade Dom Bosco</p>
+
+        <p>
+            Portal Acadêmico de Vídeos
+        </p>
+
+        <p>
+            © 2026 Todos os direitos reservados
+        </p>
+
+    </footer>
+
+    <script src="tela_inicial.js"></script>
+
+</body>
+
+</html>
